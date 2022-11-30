@@ -23,7 +23,7 @@ const WeatherCard = ({ weather, temperature, isCelsius, changeUnitTemperature, n
       <h1 >Weather App</h1>
       <h3>{weather.name}, {weather.sys.country}</h3>
 
-      <section className='.weatherCard-body'>
+      <section className='weatherCard-body'>
         <div className='img-animation'>
           <img src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`} alt='' />
         </div>

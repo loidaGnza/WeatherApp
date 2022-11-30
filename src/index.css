@@ -12,7 +12,7 @@ body {
 }
 
 img {
-  width: 60%;
+  width: 90%;
 }
 
 .App {
@@ -54,6 +54,14 @@ img {
   margin: 0 1rem;
 }
 
+.weatherCard-body {
+  margin-top: 0.5rem;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
 .weatherCard h1 {
   margin-top: 2rem;
 }
@@ -70,6 +78,7 @@ img {
 }
 
 .weatherCard-input {
+  width: 100%;
   padding: .7rem 1.5rem;
   font-size: 1.2rem;
   border-radius: 25px;
@@ -172,5 +181,15 @@ img {
 
   100% {
     transform: rotate(1800deg);
+  }
+}
+
+@media (max-width: 500px) {
+  img {
+    width: 60%
+  }
+
+  .weatherCard-body {
+    flex-direction: column;
   }
 }
